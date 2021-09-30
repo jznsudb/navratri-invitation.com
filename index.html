@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Style+Script&display=swap"
+      rel="stylesheet"
+    />
+    <title>Navratri Invitation by Ayush</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: #8b0003;
+      }
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #8b0003;
+      }
+      .right {
+        width: 70%;
+        height: 100vh;
+      }
+      .left {
+        width: 30%;
+        height: 100vh;
+        background-color: #8b0003;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url(https://i.pinimg.com/originals/d8/71/44/d87144f81ac17ad2ccb567ccece776f3.gif),
+          url(https://www.vuurwerk-vrouwen.nl/wpimages/wpca00636e.gif),
+          url(https://i.pinimg.com/originals/d8/71/44/d87144f81ac17ad2ccb567ccece776f3.gif),
+          url(https://img1.picmix.com/output/stamp/normal/4/1/7/8/118714_5c3b0.gif);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+      }
+      .top {
+        width: 100%;
+        height: 70vh;
+        background-color: #8b0003;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      .bottom {
+        width: 100%;
+        height: 30vh;
+        background-color: #8b0003;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+      .invite {
+        width: 30%;
+        height: 100%;
+        background-color: #8b0003;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      .address {
+        width: 30%;
+        height: 100%;
+        background-color: #8b0003;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      .phone {
+        width: 30%;
+        height: 100%;
+        background-color: #8b0003;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      .white {
+        color: white;
+        font-size: 1.3vw;
+        text-align: center;
+      }
+      .style {
+        font-size: 3.7vw;
+        font-family: "Style Script", cursive;
+        color: #fff61c;
+        text-align: center;
+      }
+      .button {
+        color: #8b0003;
+        font-size: 1.3vw;
+        border: 0.1vw solid #fff61c;
+        padding: 0.5vw;
+        text-decoration: none;
+        background-color: #fff61c;
+        border-radius: 0.5vw;
+        cursor: pointer;
+      }
+      .button:hover {
+        background-color: #8b0003;
+        border: 0.1vw solid #fff61c;
+        color: #fff61c;
+      }
+      @media screen and (max-width: 350px) {
+        .container {
+          display: flex;
+          flex-direction: column-reverse;
+          align-items: center;
+        }
+        .right {
+          width: 100%;
+          height: 50vh;
+        }
+        .left {
+          width: 100%;
+          height: 50vh;
+        }
+        .bottom {
+          width: 100%;
+          height: 100vh;
+          background-color: #8b0003;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-around;
+        }
+        .invite {
+          width: 100%;
+          height: 32vh;
+        }
+        .address {
+          width: 100%;
+          height: 32vh;
+        }
+        .phone {
+          width: 100%;
+          height: 32vh;
+        }
+        .white {
+          font-size: 6.7vw;
+        }
+        .style {
+          font-size: 11vw;
+        }
+        .button {
+          font-size: 6.7vw;
+          border: 0.5vw solid #fff61c;
+          padding: 3vw;
+          border-radius: 2.5vw;
+        }
+        .button:hover {
+          border: 0.5vw solid #fff61c;
+        }
+      }
+      @media screen and (min-width: 351px) and (max-width: 568px) {
+        .container {
+          display: flex;
+          flex-direction: column-reverse;
+          align-items: center;
+        }
+        .right {
+          width: 100%;
+          height: 50vh;
+        }
+        .left {
+          width: 76%;
+          height: 50vh;
+        }
+        .bottom {
+          width: 100%;
+          height: 100vh;
+          background-color: #8b0003;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-around;
+        }
+        .invite {
+          width: 100%;
+          height: 32vh;
+        }
+        .address {
+          width: 100%;
+          height: 32vh;
+        }
+        .phone {
+          width: 100%;
+          height: 32vh;
+        }
+        .white {
+          font-size: 5.3vw;
+        }
+        .style {
+          font-size: 9.7vw;
+        }
+        .button {
+          font-size: 5.3vw;
+          border: 0.5vw solid #fff61c;
+          padding: 1.5vw;
+          border-radius: 2.5vw;
+        }
+        .button:hover {
+          border: 0.5vw solid #fff61c;
+        }
+      }
+      @media screen and (min-width: 569px) and (max-width: 768px) {
+        .container {
+          display: flex;
+          flex-direction: column-reverse;
+          align-items: center;
+        }
+        .right {
+          width: 100%;
+          height: 50vh;
+        }
+        .left {
+          width: 55%;
+          height: 50vh;
+        }
+        .bottom {
+          width: 100%;
+          height: 100vh;
+          background-color: #8b0003;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-around;
+        }
+        .invite {
+          width: 100%;
+          height: 32vh;
+        }
+        .address {
+          width: 100%;
+          height: 32vh;
+        }
+        .phone {
+          width: 100%;
+          height: 32vh;
+        }
+        .style {
+          font-size: 8.7vw;
+        }
+        .white {
+          font-size: 4.1vw;
+        }
+        .button {
+          font-size: 4.1vw;
+          padding: 2vw;
+          border-radius: 2vw;
+        }
+      }
+      @media screen and (min-width: 769px) and (max-width: 1024px) {
+        .style {
+          font-size: 5.7vw;
+        }
+        .white {
+          font-size: 2.1vw;
+        }
+        .button {
+          font-size: 2.1vw;
+          padding: 1vw;
+          border-radius: 1vw;
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="right">
+        <div class="top">
+          <p class="white">&#128681; || JAI MATA DI || &#128681;</p>
+          <p class="white">
+            ॐ सर्वमंगल मांगल्ये शिवे सर्वार्थसाधिके<br />शरण्ये त्रयम्बके गौरी
+            नारायणी नमोस्तुते !!
+          </p>
+          <br />
+          <p class="style">
+            You're invited to this auspicious occassion of Navratri
+          </p>
+          <br />
+          <p class="white">On Thursday, 7 to 14 October 2021</p>
+          <br />
+          <p class="white">
+            Dhamankar Family would like to take pleasure of inviting you along
+            with your family to celebrate the Navratri at our residence.
+          </p>
+        </div>
+        <div class="bottom">
+          <div class="invite">
+            <p class="white">✽ Invited By ✽</p>
+            <p class="white">Dhamankar Family.</p>
+          </div>
+          <div class="address">
+            <p class="white">✽ Address ✽</p>
+            <p class="white">
+              Room no. 11, Om Sai Chawl, Wavtewadi, Manvelpada Road, Near. St.
+              Peter's High School, Virar(E).
+            </p>
+            <br />
+            <a
+              class="button"
+              href="https://maps.app.goo.gl/GxzTLCjVVY8ixEsFA"
+              target="_blank"
+              >Click Here to Get Location</a
+            >
+          </div>
+          <div class="phone">
+            <p class="white">✽ Phone no ✽</p>
+            <p class="white">9321291094</p>
+            <br />
+            <a class="button" href="tel:+91 93212 91094">Click Here to Call</a>
+          </div>
+        </div>
+      </div>
+      <div class="left">
+        <img src="material/devi.png" alt="" width="100%" />
+      </div>
+    </div>
+  </body>
+</html>
